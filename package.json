@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.42",
+    "tailwindcss": "^3.4.10"
+  },
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./global.css -o ./static/css/tailwind.css --minify", 
+    "mega:start": "cd client_builder && npm run build && cd .. && npm run build:css && node tailwind_add.js && cargo run",
+    "high:start": "npm run build:css && cargo run"
+  }
+}

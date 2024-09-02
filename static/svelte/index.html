@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+	<head>
+<link rel="stylesheet" href="/static/css/tailwind.css">
+
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="modulepreload" href="./_app/immutable/entry/start.BjFYPtzl.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.D2VBCUCl.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.BvLojk_z.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.6h_eYGqz.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.CKTS_TY7.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.BurVxoWM.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.paim0wAI.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <main><main class=""><h1 data-svelte-h="svelte-1dxwgjn">Page</h1> <p data-svelte-h="svelte-1u6v2dc">This is a page.</p> <div class=""><button class="rounded-lg bg-gradient-to-r from-red-200 to-red-400 via-red-300 hover:bg-gradient-to-l hover:from-red-200 hover:to-red-400 hover:via-red-300" data-svelte-h="svelte-1icpwuq">Count up</button> <button class="" data-svelte-h="svelte-176ax1j">Count Down</button> <button class="" data-svelte-h="svelte-1n37poi">Go to Another Page</button></div> <p class="">Counter: 0</p> </main></main> 
+			
+			<script>
+				{
+					__sveltekit_619pzy = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.BjFYPtzl.js"),
+						import("./_app/immutable/entry/app.6h_eYGqz.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
